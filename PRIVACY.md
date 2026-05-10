@@ -1,6 +1,6 @@
 # PrompterBox Privacy Policy
 
-_Last updated: May 10, 2026_
+_Last updated: May 10, 2026 — Studio Mode (1.1) covered._
 
 PrompterBox ("the app", "we", "us") is a teleprompter application for macOS. We are committed to protecting your privacy. This policy explains what data the app handles and how.
 
@@ -22,6 +22,20 @@ PrompterBox uses your Mac's microphone to enable voice-paced scrolling — the s
 - We never receive, see, or have access to any audio.
 
 You may revoke microphone permission at any time in **System Settings → Privacy & Security → Microphone**.
+
+## Camera Access (Studio Mode)
+
+Starting with version 1.1, PrompterBox includes "Studio Mode" — an optional feature that records you reading the script.
+
+- Camera access is requested only when you open Studio Mode.
+- Recording is performed locally using Apple's AVFoundation framework.
+- The resulting QuickTime (.mov) file is saved to your Mac (default: `~/Movies/PrompterBox/`); you can choose a different location.
+- The recording is **never** uploaded, transmitted, or shared by PrompterBox. Only you can move, share, or delete it.
+- A live preview is shown via the system's WebKit `getUserMedia` API while you are setting up; the preview is not recorded or persisted.
+
+You may revoke camera permission at any time in **System Settings → Privacy & Security → Camera**.
+
+If you do not use Studio Mode, the camera is never accessed.
 
 ## Speech Recognition
 
